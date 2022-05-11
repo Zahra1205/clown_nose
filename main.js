@@ -13,7 +13,8 @@ poseNet.on('pose', gotResult)
 function gotResult(results){
     if(results.length>0){
         console.log(results);
-
+       console.log("nose x ="+ results[0].pose.nose.x);
+       console.log("nose y ="+ results[0].pose.nose.y);
     }
 }
 function modelloaded(){
