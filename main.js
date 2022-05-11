@@ -11,9 +11,9 @@ poseNet= ml5.poseNet(video, modelloaded);
 poseNet.on('pose', gotResult)
 }
 function gotResult(results){
-    if(results.lenght>0){
+    if(results.length>0){
         console.log(results);
-        
+
     }
 }
 function modelloaded(){
