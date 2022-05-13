@@ -1,7 +1,7 @@
 nose_x=0;
 nose_y=0;
   function preload(){
-
+  img= loadImage('https://i.postimg.cc/nr7WRLvP/clown-nose.png');
 }
 function setup(){
 canvas =createCanvas(300, 300);
@@ -26,9 +26,10 @@ function modelloaded(){
 }
 function draw(){
 image(video, 0, 0, 300, 300);
-fill(255, 0, 0);
-stroke(255, 0, 0);
-circle(nose_x, nose_y, 20);
+//fill(255, 0, 0);
+//stroke(255, 0, 0);
+//circle(nose_x, nose_y, 20);
+image(img, nose_x, nose_y, 30, 30);
 }
 function takeSnapshot(){
     save("Filter_img.png");
